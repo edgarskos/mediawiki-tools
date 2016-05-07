@@ -1,0 +1,18 @@
+"""
+Count the number of times, certain template parameters are used.
+
+Usage: mw-template-argument-count SITE TEMPLATE
+
+SITE is the base URL of a MediaWiki site, e.g. https://www.wikidata.org/
+TEMPLATE is the template name, including the namespace.
+
+The output is a table consisting of four columns: the parameter name,
+the number of total uses, the number of non-empty uses, and a list of pages
+that parameter is used on, limited to 10 by default.
+
+"""
+
+from mwtools.tmpl_arg_count import main
+
+
+main()
